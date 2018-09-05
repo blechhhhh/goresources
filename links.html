@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+		Kyle Hulscher
+		1/25/2017
+	-->
+	<meta name = "description" content = "A collection of Go resources" />
+	<meta name = "keywords" content = "go, igo, baduk, weiqi, resources, tsumego" />
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="main.css" >
+	<link rel="stylesheet" type="text/css" href="sidebar.css" >
+	<link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html">Home</a>
+      	  <a href="links.html">Links</a>
+	  <a href="pdf.html">PDF</a>
+	</div>
+
+	<div id="main" class="topbar">
+	      <a href="#" class="btnhref"><span style="font-size:30px;cursor:pointer;color:#fff;padding-left:5px;" onclick="openNav()">&#9776;</span></a>
+	      <img style="margin-top:-36px" class="golog" src="images/golog.png" alt="logo" title="logo">
+	</div>
+
+
+	<script>
+	function openNav() {
+	    document.getElementById("mySidenav").style.width = "250px";
+	    document.getElementById("main").style.marginLeft = "250px";
+	    document.getElementById("darkLayer").style.display = "";
+	}
+
+	function closeNav() {
+	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("main").style.marginLeft= "0";
+	    document.getElementById("darkLayer").style.display = "none";
+	}
+	</script>
+
+	<header id="header">
+	</header>
+	<div id="content">
+			<h1>Links to Go resources</h1>
+
+			<div class="center">
+	    <p>Below are some useful links.</p>
+            <p><a href="https://tsumego.tasuki.org/" target="_blank">Cho Chikun Tsumego</a></p>
+            <p><a href="https://online-go.com/" target="_blank">Online Go</a></p>
+			<!-- a divider to center content -->
+			<br /><br /><br /><br /><br /><br /><br /><br />
+		</div>
+</div>
+<footer class="footer">
+	<p>Go resources&copy;</p>
+</footer>
+		<div id="darkLayer" class="darkClass" style="display:none;height:100%;"></div>
+		
+</body>
+</html>
